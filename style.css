@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    background-color: #000;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: hidden;
+    user-select: none;
+}
+
+#game-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#office {
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, #222 0%, #000 80%);
+    position: relative;
+    transition: background 0.1s;
+}
+
+#status {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#ui-controls {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    padding: 20px;
+    background: #333;
+    color: white;
+    border: 2px solid #666;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+#animatronic {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 300px;
+    background-color: #444; /* Aqui iria a imagem do robô */
+    border: 5px solid red;
+}
+
+.hidden { display: none; }
